@@ -1,5 +1,8 @@
 name: hola-mundo #Nombre del workflow
-on: [push] #evento que lo activará
+on:
+  push:
+    branches:
+      - 'main' #evento que lo activará
 jobs:
   hola-mundo: #Nombre del job
     runs-on: ubuntu-latest #Imagen en la que correrá
